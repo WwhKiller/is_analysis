@@ -1,0 +1,5 @@
+@startuml
+                     left to right direction
+                     actor 读者
+                     读者-->(查询借阅情况)
+                     @enduml

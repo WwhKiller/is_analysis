@@ -1,0 +1,11 @@
+@startuml
+  left to right direction
+  actor 系统管理员
+  actor 读者
+  actor 图书管理员
+  actor 功能
+  系统管理员-->(系统维护)
+  (系统维护)-->读者
+   (系统维护)-->图书管理员
+    (系统维护)-->功能
+ @enduml

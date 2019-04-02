@@ -1,0 +1,7 @@
+@startuml
+  left to right direction
+  actor 系统管理员
+  actor 读者
+  系统管理员-->(增加或删除读者权限)
+  (增加或删除读者权限)-->读者
+ @enduml

@@ -1,0 +1,5 @@
+@startuml
+left to right direction
+actor 图书管理员
+图书管理员-->(图书信息)
+@enduml

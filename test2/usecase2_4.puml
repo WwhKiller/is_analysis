@@ -3,7 +3,7 @@ left to right direction
 actor 图书管理员
 actor 读者
 
-图书管理员-->(借出图书)
-(借出图书)<--读者
+图书管理员-->(维护读者信息)
+(维护读者信息)<--读者
 
 @enduml
