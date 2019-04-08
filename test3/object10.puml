@@ -1,0 +1,5 @@
+@startuml
+class 书籍种类{
+种类：IT类
+}
+@enduml

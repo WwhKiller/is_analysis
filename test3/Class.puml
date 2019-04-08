@@ -1,0 +1,97 @@
+@startuml
+
+abstract class 用户{
+
+姓名 : String
+ID : String
+性别 : char
+可借数量：int
+总共借阅书数 : int
+
+}
+
+
+class 读者 extends 用户{
+String ID
+}
+class 图书管理员管理员 extends 用户{
+String ID
+}
+class 系统管理员 extends 用户{
+String ID
+}
+
+abstract class 借书管理 {
+书号：String
+书名：String
+作者：String
+出版社名：String
+读者ID：String
+读者姓名：String
+
+}
+ class 借书异常{
+图书为归还异常：String
+图书借出异常：String
+预约图书异常：String
+}
+
+
+借书异常..>借书管理
+
+class 借还书记录 extends 借书管理{
+
+借书时间：Date
+还书时间：Date
+真实借书时间：Date
+}
+
+class 借书{
+书号：String
+书名：String
+作者：String
+出版社名：String
+读者ID：String
+读者姓名：String
+
+}
+借书..>借还书记录
+
+class 预约{
+书号：String
+书名：String
+作者：String
+出版社名：String
+读者ID：String
+读者姓名：String
+
+}
+预约..>预约记录
+class 预约记录 extends 借书管理{
+
+预约时间：Date
+}
+class 书籍{
+书号：String
+书名：String
+种类：String
+出版社：String
+出版社号：String
+作者：String
+剩余数量：int
+馆藏数量：int
+简介：String
+}
+class 书籍种类{
+种类：String
+}
+书籍种类*--书籍
+
+书籍 "1" --> "1..剩余数量" 借书管理 : 被借阅
+
+用户 "1" --> "1..可借数量" 借书管理 : 借阅
+
+借书 --o 借书管理
+预约 --o 借书管理
+
+@enduml

@@ -1,0 +1,5 @@
+@startuml
+class 预约记录 {
+预约时间：2019/4/8
+}
+@enduml
