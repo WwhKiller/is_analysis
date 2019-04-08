@@ -9,7 +9,6 @@
 
 ``` class
 @startuml
-@startuml
 
 abstract class 用户{
 
@@ -105,7 +104,6 @@ class 书籍种类{
 借书 --o 借书管理
 预约 --o 借书管理
 
-@enduml
 @enduml
 ```
 
