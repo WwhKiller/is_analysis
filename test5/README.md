@@ -8,23 +8,23 @@
 ## 1.1. 系统管理员(L_Admin)
 |字段|类型|主键，外键|可以为空|默认值|约束|说明|
 |:-------:|:-------------:|:------:|:----:|:---:|:----:|:-----|
-|a_id|int|主键|否|||管理员编号|
-|a_name|varchar(100)| |否|||管理员姓名|
-|a_pwd|varchar(100)| |否|||管理员密码|
+|a_id|int|主键|否||unique|管理员编号|
+|a_name|varchar(100)| |否||check|管理员姓名|
+|a_pwd|varchar(100)| |否||check|管理员密码|
 
 ## 1.2. 读者表(L_Reader)
 |字段|类型|主键，外键|可以为空|默认值|约束|说明|
 |:-------:|:-------------:|:------:|:----:|:---:|:----:|:-----|
-|r_id|int|主键|否|||读者编号|
-|r_name|varchar(20)| |否|||读者姓名|
-|r_pwd|varchar(20)| |否|||读者密码|
-|r_sex|bit| |否|||读者性别|
+|r_id|int|主键|否||unique|读者编号|
+|r_name|varchar(20)| |否||check|读者姓名|
+|r_pwd|varchar(20)| |否||check|读者密码|
+|r_sex|bit| |否||check|读者性别|
 |r_photo|varchar(100)| |否|||读者头像|
-|r_email|varchar(100)| |是|||读者邮箱|
-|r_contact|varchar(20)| |否|||读者联系方式|
-|r_grade|varchar(20)| |是|||读者年级|
-|r_academy|varchar(20)| |是|||读者学院|
-|r_major|varchar(20)| |是|||读者专业|
+|r_email|varchar(100)| |是||check|读者邮箱|
+|r_contact|varchar(20)| |否||check|读者联系方式|
+|r_grade|varchar(20)| |是||check|读者年级|
+|r_academy|varchar(20)| |是||check|读者学院|
+|r_major|varchar(20)| |是||check|读者专业|
 |r_allcountbook|int| |否|||总共借阅图书数量|
 |r_maxcount|int| |否|||最大可借阅数量|
 
@@ -95,12 +95,15 @@
 |rb_outtime|DataTime| |否|||预约时间|
 |rb_endtime|DataTime| |否|||到期时间|
 |rb_taketime|DataTime| |否|||拿走时间|
-|rb_isexpired|bit| |否||否|是否过期|
+|rb_isexpired|bit| |否|||是否过期|
+
+
 ***
 
 ## 2. 界面设计
 ## 2.1. 借书界面设计
-![index](index.png)
+![index](page1.png)
+详情请参考： https://wwhkiller.github.io/is_analysis_pages/ui/index.html
 - 用例图参见：借书用例
 - 类图参见：借书类，读者类
 - 顺序图参见：借书顺序图
@@ -109,10 +112,16 @@
 1. 获取全部图书
 
 - 功能：用于获取全部分类
-- 请求地址： https://wwhkiller.github.io/is_analysis_pages/ui/index.html
+- 请求地址： https://wwhkiller/api/Query
 - 请求方法：POST
-- 请求参数：无
-- 返回实例：
+- 请求参数：
+
+|参数名称|必填|说明|
+|:-------:|:-------------: |:-------------: |
+|access_token|是|用于验证请求合法性的认证信息。|
+| method |是|固定为 “POST”。|
+
+- 返回实例： 
 ```
 {
    
@@ -138,19 +147,21 @@
 
 2. 借出图书API
 - 功能：用于获取全部分类
-- 请求地址:(https://wwhkiller.github.io/is_analysis_pages/ui/page1.html) 
+- 请求地址:(https://wwhkiller/api/borrow) 
 - 请求方法：POST
 - 请求参数：
 
 
 |参数名称|必填|说明|
 |:-------:|:-------------: | :----------:|
+|access_token|是|用于验证请求合法性的认证信息。|
+| method |是|固定为 “POST”。
 |b_id|是|图书编号|验证图书信息|
 |r_id|是|读者编号|验证读者信息|
 
 - 返回实例：
-```
-{
+ ```
+ {
     "info": "借阅表单",
     "data": {
         "bw_id": "001",
