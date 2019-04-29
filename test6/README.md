@@ -23,7 +23,7 @@
 ## 2. 系统总体结构
 ![](系统总体结构.png)
 
-界面设计参见：https://zwdbox.github.io/is_analysis/test6/ui/index.html
+界面设计参见：https://wwhkiller.github.io/is_analysis_pages/test6_Ui/index.html
     
 ## 3. 用例图设计 [源码](UseCase.puml)
 ![](UseCase.png)
