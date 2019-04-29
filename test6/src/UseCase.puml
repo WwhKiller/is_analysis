@@ -1,5 +1,5 @@
 @startuml
-title 基于类似于GitHub平台的实验管理平台--用例图
+title 基于软件项目的托管平台的实验管理平台--用例图
 actor teachers
 actor students
 actor users
