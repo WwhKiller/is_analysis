@@ -36,11 +36,11 @@
 
 ## 6. 用例及界面详细设计
 - ### [“学生列表”用例](./用例/学生列表.md),[界面1]( https://wwhkiller.github.io/is_analysis_pages/test6_Ui/index.html),[界面2](https://wwhkiller.github.io/is_analysis_pages/test6_Ui/teacher.html)
-- ### [“评定成绩”用例](./用例/评定成绩.md),[界面](https://zwdbox.github.io/is_analysis/test6/ui/评定成绩.html)
-- ### [“查看成绩”用例](./用例/查看成绩.md),[界面](https://zwdbox.github.io/is_analysis/test6/ui/查看成绩.html)
-- ### [“修改密码”用例](./用例/修改密码.md),[界面](https://zwdbox.github.io/is_analysis/test6/ui/顶部菜单.html)
-- ### [“修改用户信息”用例](./用例/修改用户信息.md),[界面](https://zwdbox.github.io/is_analysis/test6/ui/顶部菜单.html)
-- ### [“查看用户信息”用例](./用例/查看用户信息.md),[界面](https://zwdbox.github.io/is_analysis/test6/ui/顶部菜单.html)
-- ### [“登出”用例](./用例/注销.md),[界面](https://zwdbox.github.io/is_analysis/test6/ui/顶部菜单.html)
-- ### [“登录”用例](./用例/登录.md),[界面](https://zwdbox.github.io/is_analysis/test6/ui/登录.html)
+- ### [“评定成绩”用例](./用例/评定成绩.md),[界面](https://wwhkiller.github.io/is_analysis_pages/test6_Ui/teacher.html)
+- ### [“查看成绩”用例](./用例/查看成绩.md),[界面1](https://wwhkiller.github.io/is_analysis_pages/test6_Ui/index.html),[界面2]( https://wwhkiller.github.io/is_analysis_pages/test6_Ui/student.html)
+- ### [“修改密码”用例](./用例/修改密码.md),[界面1](https://wwhkiller.github.io/is_analysis_pages/test6_Ui/student.html),[界面2](https://wwhkiller.github.io/is_analysis_pages/test6_Ui/teacher.html)
+- ### [“修改用户信息”用例](./用例/修改用户信息.md),[界面1](https://wwhkiller.github.io/is_analysis_pages/test6_Ui/student.html),[界面2](https://wwhkiller.github.io/is_analysis_pages/test6_Ui/teacher.html)
+- ### [“查看用户信息”用例](./用例/查看用户信息.md),[界面1](https://wwhkiller.github.io/is_analysis_pages/test6_Ui/student.html),[界面2](https://wwhkiller.github.io/is_analysis_pages/test6_Ui/teacher.html)
+- ### [“登出”用例](./用例/注销.md),[界面](https://wwhkiller.github.io/is_analysis_pages/test6_Ui/index.html)
+- ### [“登录”用例](./用例/登录.md),[界面](https://wwhkiller.github.io/is_analysis_pages/test6_Ui/login.html)
     

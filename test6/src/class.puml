@@ -1,5 +1,5 @@
 @startuml
-title 基于GitHub的实验管理平台--类图
+title 基于软件项目的托管平台的实验管理平台--类图
 class users {
     <b>user_id</b> （用户ID）
     name （用户真实姓名）
