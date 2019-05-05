@@ -41,6 +41,6 @@
 - ### [“修改密码”用例](./用例/修改密码.md),[界面1](https://wwhkiller.github.io/is_analysis_pages/test6_Ui/student.html),[界面2](https://wwhkiller.github.io/is_analysis_pages/test6_Ui/teacher.html)
 - ### [“修改用户信息”用例](./用例/修改用户信息.md),[界面1](https://wwhkiller.github.io/is_analysis_pages/test6_Ui/student.html),[界面2](https://wwhkiller.github.io/is_analysis_pages/test6_Ui/teacher.html)
 - ### [“查看用户信息”用例](./用例/查看用户信息.md),[界面1](https://wwhkiller.github.io/is_analysis_pages/test6_Ui/student.html),[界面2](https://wwhkiller.github.io/is_analysis_pages/test6_Ui/teacher.html)
-- ### [“登出”用例](./用例/注销.md),[界面](https://wwhkiller.github.io/is_analysis_pages/test6_Ui/index.html)
+- ### [“绑定平台”用例](./用例/帮顶平台.md),[界面](https://wwhkiller.github.io/is_analysis_pages/test6_Ui/student.html)
 - ### [“登录”用例](./用例/登录.md),[界面](https://wwhkiller.github.io/is_analysis_pages/test6_Ui/login.html)
     
